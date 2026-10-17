@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Idiqlat:wght@200;300;400&family=Kalnia+Glaze:wght@100..700&display=swap');
+.container {display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(79, 15, 15);
+  font-family: "Noto Serif Display"; color: white; font-size: 25px;
+height: fit-content;margin: 0px;
+ padding: 0px; }
+
+
+
+
+ i{ color: white; font-size: 30px; }
+ .icon{ display: none; }
+
+.satauri p {font-family: "Arial"; color: white; font-size: 25px; margin: 0px; padding: 0px;}
+
+html, body {
+margin: 0;
+ padding: 0;    
+  background-color: rgb(15, 79, 78);}
+a {color: white;}
+.nav {
+    display: flex;
+    flex-direction: row; 
+   align-items: center;
+    justify-content: space-between;
+   gap: 20px;}
+ .about p{width: 35%; font-family:"idiqlat"; color: white; font-size: 30px; background-color: rgba(0, 0, 0, 0.7); border-radius: 20px; padding: 10px; border: none; border-left: 5px solid rgb(68, 0, 89); border-right: 5px solid rgb(68, 0, 89);
+}
+.about {display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   width: 100%; height: 100%; 
+   gap: 10%;
+  font-family:Arial; color: white; 
+}
+.meow{width: 35%; height: fit-content; display: flex; flex-direction:column; align-items: center;justify-content: space-between;margin-bottom:2%;}
+.meow p{ width: 85%; height: fit-content;text-align: center;}
+button{ width: 200px;transition: 0.3s; height: 40px;font-size: 20px;background-color: transparent;border-radius: 10px;}
+button:hover{background-color: rgb(205, 70, 70);transform: scale(1.05);}
+.icon { display: none; align-items: center; }
+.icon button { width: fit-content; height: fit-content; padding: 8px; background: none; border: none; color: white; cursor: pointer; }
+.icon i { color: white; font-size: 30px; }
+.off-screen-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 2;
+  width: min(280px, 80vw);
+  height: 100vh;
+  padding: 80px 24px 24px;
+  box-sizing: border-box;
+  background: rgb(187, 119, 119);
+  transition: right 0.25s ease;
+}
+
+.satauri {display: flex;text-align: center; flex-direction: row; justify-content: center; align-items: center; width: fit-content; height: fit-content; }
+.satauri p {font-family: "Arial"; color: white; font-size: 25px; margin: 0px; padding: 0px;}
+.footer {display: flex;text-align: center; flex-direction: row; justify-content: space-around; align-items: center; width: 100%; height: 40%; background-color: rgb(23, 4, 4); color: white; font-family: "Arial"; font-size: 15px;}
+
+ul {list-style: none; height: min-content;}
+
+.footer-content{ margin:4%; height:fit-content;display: flex; flex-direction: row; justify-content: center; align-items: center; gap:10%; padding-right: 10px; margin-right:10px; }
+.about-content{display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: fit-content; gap: 10px;}
+.off-screen-menu.open { right: 0; }
+.off-screen-menu ul { list-style: none; padding: 0; margin: 0; }
+.off-screen-menu li { margin: 0 0 24px; font: 24px "Noto Serif Display", serif; }
+
+@media screen and (max-width: 840px) {
+  .nav { display: none; }
+  .about{display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5%; height:fit-content;}
+  .about p{width: 50%; font-size: 20px;text-align: center;height:90%;}
+  .meow {width: 60%; margin-bottom: 3%;height:fit-content;}
+  .icon { display: block; display: flex; align-items: center;}
+}
+@media screen and (max-width:1090px) { p {width: 40%;} .meow p{ width: 90%;}
+  .satauri p{width:fit-content;} .satauri{ width:fit-content;}
+}
+
+
+@media screen and (max-width:678px) { .satauri p{width:50%;} .satauri{ width:fit-content;}
+ .footer{gap:0;}} .footer-content{padding-top:0; padding-bottom:10px;margin-top:0;margin-bottom:10;}
+ @media screen and (max-width:400px) { h1{font-size: 25px;} h2{width:80%;} .footer-content{padding:0;padding-right:5%;margin-right:5%;} ul{padding:0; padding-bottom:25px;} .footer{gap:2%;}}
+  @media screen and (max-width:531px) {.container h1{font-size: 30px;}}
+   @media screen and (max-width:367px) {.container h1{font-size: 20px;}}
+      @media screen and (max-width:1013px) {.about-content p{font-size: 25px;}}
+          @media screen and (max-width:513px){ .satauri p{font-size:20px;}}
+           @media screen and (max-width:460px){ .about-content p{font-size: 16px;}  }
+           @media screen and (max-width:350px) { .satauri p{ font-size:15px;} }
